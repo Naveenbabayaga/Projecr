@@ -20,7 +20,7 @@ def encrypt_image(image_path, key):
     ciphertext = encryptor.update(plaintext) + encryptor.finalize()
     
     tag = encryptor.tag
-    t
+ 
     return iv, ciphertext, tag
 
 def decrypt_image(iv, ciphertext, key, tag):
